@@ -1,4 +1,4 @@
-package com.technolifestyle.therealshabi.brogrammar.RequestUtils;
+package com.technolifestyle.therealshabi.brogrammar.StringUtility;
 
 /**
  * Created by shahbaz on 24/2/17.
