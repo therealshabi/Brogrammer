@@ -4,6 +4,7 @@
     android:id="@+id/activity_slack"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.technolifestyle.therealshabi.brogrammar.SlackActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -11,19 +12,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.Toolbar
+        <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/activity_slack_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/slack" />
+
+                <TextView
+                    android:id="@+id/activity_slack_toolbar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"
+                    android:text="JDEV"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
 
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
-    <!-- <android.support.v7.widget.RecyclerView
-         android:id="@+id/activity_slack_recycler_view"
-         android:layout_below="@id/activity_slack_app_bar_layout"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_slack_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_slack_app_bar_layout">
 
-     </android.support.v7.widget.RecyclerView>-->
+    </android.support.v7.widget.RecyclerView>
 </RelativeLayout>

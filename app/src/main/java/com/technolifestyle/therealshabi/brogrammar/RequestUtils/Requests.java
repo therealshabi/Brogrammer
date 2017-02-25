@@ -28,8 +28,8 @@ import static android.widget.Toast.LENGTH_SHORT;
 
 public class Requests implements Slack_Client {
 
-    private static String USERS_LIST_URL = "https://slack.com/api/users.list?token=";
-    private static String MESSAGE_HISTORY_URL = "https://slack.com/api/channels.history?token=";
+    private String USERS_LIST_URL = "https://slack.com/api/users.list?token=";
+    private String MESSAGE_HISTORY_URL = "https://slack.com/api/channels.history?token=";
 
     public void getSlackCode(final Context context, String GET_ACCESS_TOKEN_URL) throws JSONException {
         /*jsonObject.put("client_id", CLIENT_ID);
@@ -121,7 +121,15 @@ public class Requests implements Slack_Client {
                         JSONObject temp = messageArray.getJSONObject(i);
                         MessageModel message = new MessageModel();
                         message.setUserId(temp.getString("user"));
-                        message.setMessage(temp.getString("text"));
+                        String m = temp.getString("text");
+                        if (m.matches("[<]{1}.*[>]{1}.*")) {
+                            String t[] = m.split(">");
+                            String l = t[0].substring(1, t[0].length() - 1);
+                            l = l.substring(1, 9);
+                            UserModel model = new LocalDataSync(context).getUserData(l);
+                            m = model.getName() + t[1];
+                        }
+                        message.setMessage(m);
                         message.setTimeStamp(temp.getString("ts"));
 
                         //Local Database Insertion

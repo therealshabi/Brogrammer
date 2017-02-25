@@ -9,6 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.technolifestyle.therealshabi.brogrammar.Models.MessageModel;
 import com.technolifestyle.therealshabi.brogrammar.Models.UserModel;
 
+import java.util.ArrayList;
+
+import static android.database.DatabaseUtils.sqlEscapeString;
+
 /**
  * Created by shahbaz on 25/2/17.
  */
@@ -82,15 +86,17 @@ public class LocalDataSync extends SQLiteOpenHelper {
         SQLiteDatabase database = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(MESSAGE_TABLE_USER_ID, message.getUserId());
-        values.put(MESSAGE_TABLE_MESSAGE, message.getMessage());
+        values.put(MESSAGE_TABLE_MESSAGE, message.getMessage().replaceAll("\"", "'"));
         values.put(MESSAGE_TABLE_TIME_STAMP, message.getTimeStamp());
 
+        if (this.getMessage(message) != true)
         database.insert(MESSAGE_TABLE_NAME, null, values);
     }
 
     public boolean getMessage(MessageModel message) {
         SQLiteDatabase database = getReadableDatabase();
-        String sql = "Select * from " + MESSAGE_TABLE_NAME + " where " + MESSAGE_TABLE_USER_ID + "='" + message.getUserId() + "' AND " + MESSAGE_TABLE_MESSAGE + "='" + message.getMessage() + "' AND " + MESSAGE_TABLE_TIME_STAMP + "='" + message.getTimeStamp() + "';";
+        String sql = "Select * from " + MESSAGE_TABLE_NAME + " where " + MESSAGE_TABLE_USER_ID + "=\"" + message.getUserId() + "\" AND " + MESSAGE_TABLE_MESSAGE + "=\"" + message.getMessage().replaceAll("\"", "'") + "\" AND " + MESSAGE_TABLE_TIME_STAMP + "=\"" + message.getTimeStamp() + "\";";
+        ;
         Cursor cursor = database.rawQuery(sql, null);
         if (cursor.getCount() > 0) {
             cursor.close();
@@ -98,5 +104,43 @@ public class LocalDataSync extends SQLiteOpenHelper {
         }
         cursor.close();
         return false;
+    }
+
+    public ArrayList<MessageModel> getMessagesList() {
+        ArrayList<MessageModel> messages = new ArrayList<>();
+
+        String sql = "Select * from " + MESSAGE_TABLE_NAME + ";";
+        Cursor cursor = getReadableDatabase().rawQuery(sql, null);
+        while (cursor.moveToNext()) {
+            MessageModel message = new MessageModel();
+            message.setUserId(cursor.getString(cursor.getColumnIndex(MESSAGE_TABLE_USER_ID)));
+            message.setMessage(cursor.getString(cursor.getColumnIndex(MESSAGE_TABLE_MESSAGE)));
+            message.setTimeStamp(cursor.getString(cursor.getColumnIndex(MESSAGE_TABLE_TIME_STAMP)));
+            messages.add(message);
+        }
+        cursor.close();
+
+        return messages;
+    }
+
+    public UserModel getUserData(String id) {
+
+        String sql = "Select * from " + USER_TABLE_NAME + " WHERE " + USER_TABLE_USER_ID + " = '" + id + "';";
+        Cursor cursor = getReadableDatabase().rawQuery(sql, null);
+        UserModel user = new UserModel();
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            user.setId(cursor.getString(cursor.getColumnIndex(USER_TABLE_USER_ID)));
+            user.setName(cursor.getString(cursor.getColumnIndex(USER_TABLE_USER_NAME)));
+        }
+        cursor.close();
+
+        return user;
+    }
+
+    public void clearMessages() {
+        SQLiteDatabase db = getWritableDatabase();
+
+        db.execSQL("Delete from " + MESSAGE_TABLE_NAME + ";");
     }
 }
