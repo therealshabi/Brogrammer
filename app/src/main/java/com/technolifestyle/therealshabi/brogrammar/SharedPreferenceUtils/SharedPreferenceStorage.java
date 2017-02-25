@@ -29,6 +29,7 @@ public class SharedPreferenceStorage {
     public static void setAccessCode(Context context, String access_code) {
         SharedPreferences sharedPreferences = context.getSharedPreferences(MY_SHARED_PREFERENCES, context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
         editor.putString(ACCESS_CODE, access_code);
         editor.commit();
     }

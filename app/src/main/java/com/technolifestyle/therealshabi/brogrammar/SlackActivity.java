@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.technolifestyle.therealshabi.brogrammar.RequestUtils.Requests;
 import com.technolifestyle.therealshabi.brogrammar.SharedPreferenceUtils.SharedPreferenceStorage;
 public class SlackActivity extends AppCompatActivity {
 
@@ -24,6 +26,14 @@ public class SlackActivity extends AppCompatActivity {
             getSupportActionBar().setTitle(SharedPreferenceStorage.getTeamName(getBaseContext()));
             getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_arrow_back_white_24dp));
         }
+
+        UpdateUsersList();
+    }
+
+    private void UpdateUsersList() {
+        Requests req = new Requests();
+        Toast.makeText(getBaseContext(), "Update Users", Toast.LENGTH_SHORT).show();
+        req.getUsersList(getBaseContext());
     }
 
     @Override

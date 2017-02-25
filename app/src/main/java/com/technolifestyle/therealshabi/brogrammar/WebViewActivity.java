@@ -24,7 +24,7 @@ import static com.technolifestyle.therealshabi.brogrammar.StringUtility.StringUt
 
 public class WebViewActivity extends AppCompatActivity {
 
-    public static final String CODE_PARAMETER_AUTHORIZATION_URL = "https://slack.com/oauth/pick?scope=channels%3Ahistory&client_id=128465399559.144229293015";
+    public static final String CODE_PARAMETER_AUTHORIZATION_URL = "https://slack.com/oauth/pick?scope=users%3Aread+channels%3Ahistory&client_id=128465399559.144229293015";
     public static final String GET_ACCESS_TOKEN_URL = "https://slack.com/api/oauth.access?client_secret=f711ebf28f95d762bb49a8b1b2ad6c9e&client_id=128465399559.144229293015&code=";
     ProgressBar loadingProgressBar;
     Toolbar toolbar;
@@ -84,7 +84,7 @@ public class WebViewActivity extends AppCompatActivity {
                     Log.d("JSON Exception", e.toString());
                 }
                 SharedPreferenceStorage.setSharedPreferenceMainActivityFlag(getBaseContext(), true);
-                startActivity(new Intent(WebViewActivity.this, MainActivity.class));
+                startActivity(new Intent(WebViewActivity.this, SlackActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);

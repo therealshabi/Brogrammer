@@ -2,24 +2,34 @@ package com.technolifestyle.therealshabi.brogrammar.RequestUtils;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.technolifestyle.therealshabi.brogrammar.Models.MessageModel;
+import com.technolifestyle.therealshabi.brogrammar.Models.UserModel;
 import com.technolifestyle.therealshabi.brogrammar.SharedPreferenceUtils.SharedPreferenceStorage;
 import com.technolifestyle.therealshabi.brogrammar.StringUtility.Slack_Client;
 import com.technolifestyle.therealshabi.brogrammar.StringUtility.StringUtils;
+import com.technolifestyle.therealshabi.brogrammar.DataSynchronization.LocalDataSync;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 /**
  * Created by shahbaz on 24/2/17.
  */
 
 public class Requests implements Slack_Client {
+
+    private static String USERS_LIST_URL = "https://slack.com/api/users.list?token=";
+    private static String MESSAGE_HISTORY_URL = "https://slack.com/api/channels.history?token=";
 
     public void getSlackCode(final Context context, String GET_ACCESS_TOKEN_URL) throws JSONException {
         /*jsonObject.put("client_id", CLIENT_ID);
@@ -59,5 +69,78 @@ public class Requests implements Slack_Client {
 
     }
 
+    public void getUsersList(final Context context) {
+        USERS_LIST_URL += SharedPreferenceStorage.getAccessCode(context);
+        Log.d("URL", USERS_LIST_URL);
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, USERS_LIST_URL, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray usersArray = response.getJSONArray("members");
+                    if (usersArray != null) {
+                        for (int i = 0; i < usersArray.length(); i++) {
+                            JSONObject temp = usersArray.getJSONObject(i);
+                            UserModel user = new UserModel();
+                            if (!temp.getString("id").equals("U3WCGPZ71")) {
+                                user.setId(temp.getString("id"));
+                                user.setName(temp.getString("real_name"));
+
+                                //Local Database Insertion
+                                LocalDataSync data = new LocalDataSync(context);
+                                if (data.getUser(user.getId()) != true)
+                                    data.insertUserDetails(user);
+                            }
+                        }
+                    } else {
+                        Toast.makeText(context, "NULL ARRAY", LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context, "An Error has occurred", LENGTH_SHORT).show();
+            }
+        });
+
+        Volley.newRequestQueue(context).add(jsonObjectRequest);
+    }
+
+    public void getChannelMessages(final Context context) {
+        MESSAGE_HISTORY_URL += SharedPreferenceStorage.getAccessCode(context) + "&channel=" + GENERAL_CHANNEL_ID;
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, MESSAGE_HISTORY_URL, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONArray messageArray = response.getJSONArray("messages");
+                    for (int i = 0; i < messageArray.length(); i++) {
+                        JSONObject temp = messageArray.getJSONObject(i);
+                        MessageModel message = new MessageModel();
+                        message.setUserId(temp.getString("user"));
+                        message.setMessage(temp.getString("text"));
+                        message.setTimeStamp(temp.getString("ts"));
+
+                        //Local Database Insertion
+                        LocalDataSync data = new LocalDataSync(context);
+                        if (data.getMessage(message) != true)
+                            data.insertMessageDetails(message);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context, "An Error has been Encountered", LENGTH_SHORT).show();
+            }
+        });
+
+        Volley.newRequestQueue(context).add(jsonObjectRequest);
+    }
 
 }
