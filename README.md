@@ -7,3 +7,5 @@ Tools Used:-
 2. Volley
 3. Github API
 4. Outh
+
+NOTE : THE App is still in development phase and the above mentioned features are not fully implemented yet.
