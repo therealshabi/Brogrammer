@@ -1,9 +1,8 @@
 package com.technolifestyle.therealshabi.brogrammar;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, SlackActivity.class));
         }
 
-        mButton = (Button) findViewById(R.id.button);
+        mButton = findViewById(R.id.button);
 
 
         mButton.setOnClickListener(new View.OnClickListener() {

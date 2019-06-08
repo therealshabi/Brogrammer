@@ -55,7 +55,7 @@ public class WebViewActivity extends AppCompatActivity {
         mWebView.loadUrl(CODE_PARAMETER_AUTHORIZATION_URL);
         mWebView.setWebViewClient(new MyWebViewClient());
 
-        loadingProgressBar = (ProgressBar) findViewById(R.id.activity_web_view_progressbar);
+        loadingProgressBar = findViewById(R.id.activity_web_view_progressbar);
 
         mWebView.setWebChromeClient(new WebChromeClient() {
 
@@ -76,16 +76,15 @@ public class WebViewActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                try {
-                    sendRequests();
-                } catch (JSONException e) {
-                    Log.d("JSON Exception", e.toString());
-                }
-                SharedPreferenceStorage.setSharedPreferenceMainActivityFlag(getBaseContext(), true);
-                startActivity(new Intent(WebViewActivity.this, SlackActivity.class));
-                return true;
+        if (item.getItemId() == android.R.id.home) {
+            try {
+                sendRequests();
+            } catch (JSONException e) {
+                Log.d("JSON Exception", e.toString());
+            }
+            SharedPreferenceStorage.setSharedPreferenceMainActivityFlag(getBaseContext(), true);
+            startActivity(new Intent(WebViewActivity.this, SlackActivity.class));
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -5,12 +5,12 @@ package com.technolifestyle.therealshabi.brogrammar.StringUtility;
  */
 
 public class StringUtils {
-    public static String SLACK_CODE_PARAMETER;
-    public static int STATUS_CODE;
-    public static String CURRENT_URL;
-    public static String ACCESS_TOKEN;
-    public static String TEAM_NAME;
-    public static String USER_ID;
+    private static String SLACK_CODE_PARAMETER;
+    private static int STATUS_CODE;
+    private static String CURRENT_URL;
+    private static String ACCESS_TOKEN;
+    private static String TEAM_NAME;
+    private static String USER_ID;
 
     public static String getSlackCodeParameter() {
         return SLACK_CODE_PARAMETER;
