@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/therealshabi/Desktop/development/Android/Brogrammer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/therealshabi/.gradle/caches/transforms-2/files-2.1/4513c7e50ed2349454956104ae3273b0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

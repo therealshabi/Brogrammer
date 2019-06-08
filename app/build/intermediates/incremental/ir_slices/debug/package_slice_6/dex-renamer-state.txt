@@ -1,0 +1,4 @@
+#Sat Jun 08 21:35:23 IST 2019
+base.0=/home/therealshabi/Desktop/development/Android/Brogrammer/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

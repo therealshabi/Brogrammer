@@ -1,0 +1,200 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/18cb19235359ca01a7c2a56bbe50111c/AndroidManifest.xml:2:1-7:12
+MERGED from [com.loopeer.library:cardstack:1.0.2] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/7b9b1445ed2adfd6c9e1e15736fca721/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.material:material:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/eb8565b7758a8dba0a9cee706c8e6d34/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4513c7e50ed2349454956104ae3273b0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.volley:volley:1.1.1] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/22e5fba5ae40fc9a609cf4d564d5e5f8/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/c50d539f3732c088c77bade85627c039/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d98b983904bf0f6e0d526797c3d6c393/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/39b65837fb7ef2e124acac656a14c772/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d4737687df20d1b58679859daecf9c2e/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b3d8fb653452365d4b0cfa463dc18395/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4bdf305ac3d0cc4959da1c1a5eea8165/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0303daba2a4ee0047d8909ef4512312d/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/abcc5d07788a81b23101a8361f42397f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/ca38de8749fc5006c8d2ccce6890f7de/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/5ddf2d5ffea65392d379e21a54963df3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/88719c05965e9c5960d45dd3f894033c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b9f064618df82a1b391b66122dbc24ec/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/90a3aa13922bb99f181e9153698f11ac/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/06c4544eca4dd948fd6ce568b3cf855b/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6b899a26def98006b38d07580aaf326f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b2ae4bfac38539a9f3ce4ea99bd6d496/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c3af673a11093709d3a67763670013a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c8c7c788cd2f0a26a745c81cdcdf692/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/a02d5c7cf36a1c40f065c194792fb39a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/e8c566b3c1fca8b1ab51f0c6d84e57c5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0dbddf84e301c4d75832eb97fa173e11/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/bd94f8714a7cbc699312e3811e1eb974/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/2068d41144822dbef0fde665979702bb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/fb250f738173729eaf6e3e9cfd315a94/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/99f1cf5f3b6cd4f90f47f62aaad128be/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6c4cc3952df84554d1c43502ba743ecc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/f2757d77a1c9eed55429cb3cb967e5b3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/aede8126c033186d28f1a9a320d0e74f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/31b99feeac9e8080fc8b276f827a29b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/44ca752016e7ea3b5d5a499200e9b5a5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/217b57b52c65ae4a9e2b523bf11f3007/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:3:5-58
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:7:5-22:19
+MERGED from [com.loopeer.library:cardstack:1.0.2] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/7b9b1445ed2adfd6c9e1e15736fca721/AndroidManifest.xml:11:5-15:19
+MERGED from [com.loopeer.library:cardstack:1.0.2] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/7b9b1445ed2adfd6c9e1e15736fca721/AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.material:material:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/eb8565b7758a8dba0a9cee706c8e6d34/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/eb8565b7758a8dba0a9cee706c8e6d34/AndroidManifest.xml:22:5-20
+MERGED from [com.android.volley:volley:1.1.1] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/22e5fba5ae40fc9a609cf4d564d5e5f8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/22e5fba5ae40fc9a609cf4d564d5e5f8/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d98b983904bf0f6e0d526797c3d6c393/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d98b983904bf0f6e0d526797c3d6c393/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0dbddf84e301c4d75832eb97fa173e11/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0dbddf84e301c4d75832eb97fa173e11/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:10:9-41
+	android:icon
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:12:9-40
+activity#com.technolifestyle.therealshabi.brogrammar.MainActivity
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:13:9-19:20
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:13:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.technolifestyle.therealshabi.brogrammar.WebViewActivity
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:20:9-53
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:20:19-50
+activity#com.technolifestyle.therealshabi.brogrammar.SlackActivity
+ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:21:9-60
+	android:name
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml:21:19-48
+uses-sdk
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+MERGED from [androidx.core:core-ktx:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/18cb19235359ca01a7c2a56bbe50111c/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/18cb19235359ca01a7c2a56bbe50111c/AndroidManifest.xml:5:5-44
+MERGED from [com.loopeer.library:cardstack:1.0.2] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/7b9b1445ed2adfd6c9e1e15736fca721/AndroidManifest.xml:7:5-9:41
+MERGED from [com.loopeer.library:cardstack:1.0.2] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/7b9b1445ed2adfd6c9e1e15736fca721/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/eb8565b7758a8dba0a9cee706c8e6d34/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/eb8565b7758a8dba0a9cee706c8e6d34/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4513c7e50ed2349454956104ae3273b0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4513c7e50ed2349454956104ae3273b0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:volley:1.1.1] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/22e5fba5ae40fc9a609cf4d564d5e5f8/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/22e5fba5ae40fc9a609cf4d564d5e5f8/AndroidManifest.xml:7:5-43
+MERGED from [androidx.cardview:cardview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/c50d539f3732c088c77bade85627c039/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/c50d539f3732c088c77bade85627c039/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d98b983904bf0f6e0d526797c3d6c393/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d98b983904bf0f6e0d526797c3d6c393/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/39b65837fb7ef2e124acac656a14c772/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/39b65837fb7ef2e124acac656a14c772/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d4737687df20d1b58679859daecf9c2e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/d4737687df20d1b58679859daecf9c2e/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b3d8fb653452365d4b0cfa463dc18395/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b3d8fb653452365d4b0cfa463dc18395/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4bdf305ac3d0cc4959da1c1a5eea8165/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/4bdf305ac3d0cc4959da1c1a5eea8165/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0303daba2a4ee0047d8909ef4512312d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0303daba2a4ee0047d8909ef4512312d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/abcc5d07788a81b23101a8361f42397f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/abcc5d07788a81b23101a8361f42397f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/ca38de8749fc5006c8d2ccce6890f7de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/ca38de8749fc5006c8d2ccce6890f7de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/5ddf2d5ffea65392d379e21a54963df3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/5ddf2d5ffea65392d379e21a54963df3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/88719c05965e9c5960d45dd3f894033c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/88719c05965e9c5960d45dd3f894033c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b9f064618df82a1b391b66122dbc24ec/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b9f064618df82a1b391b66122dbc24ec/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/90a3aa13922bb99f181e9153698f11ac/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/90a3aa13922bb99f181e9153698f11ac/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/06c4544eca4dd948fd6ce568b3cf855b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0-beta02] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/06c4544eca4dd948fd6ce568b3cf855b/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6b899a26def98006b38d07580aaf326f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6b899a26def98006b38d07580aaf326f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b2ae4bfac38539a9f3ce4ea99bd6d496/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/b2ae4bfac38539a9f3ce4ea99bd6d496/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c3af673a11093709d3a67763670013a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c3af673a11093709d3a67763670013a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c8c7c788cd2f0a26a745c81cdcdf692/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0c8c7c788cd2f0a26a745c81cdcdf692/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/a02d5c7cf36a1c40f065c194792fb39a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/a02d5c7cf36a1c40f065c194792fb39a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0-alpha01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/3bbcf94c4b2e8e450f0a31209a21a612/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/e8c566b3c1fca8b1ab51f0c6d84e57c5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/e8c566b3c1fca8b1ab51f0c6d84e57c5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0dbddf84e301c4d75832eb97fa173e11/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/0dbddf84e301c4d75832eb97fa173e11/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/bd94f8714a7cbc699312e3811e1eb974/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/bd94f8714a7cbc699312e3811e1eb974/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/2068d41144822dbef0fde665979702bb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/2068d41144822dbef0fde665979702bb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/fb250f738173729eaf6e3e9cfd315a94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/fb250f738173729eaf6e3e9cfd315a94/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/99f1cf5f3b6cd4f90f47f62aaad128be/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/99f1cf5f3b6cd4f90f47f62aaad128be/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6c4cc3952df84554d1c43502ba743ecc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/6c4cc3952df84554d1c43502ba743ecc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/f2757d77a1c9eed55429cb3cb967e5b3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/f2757d77a1c9eed55429cb3cb967e5b3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/aede8126c033186d28f1a9a320d0e74f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/aede8126c033186d28f1a9a320d0e74f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/31b99feeac9e8080fc8b276f827a29b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/31b99feeac9e8080fc8b276f827a29b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/44ca752016e7ea3b5d5a499200e9b5a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/44ca752016e7ea3b5d5a499200e9b5a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/217b57b52c65ae4a9e2b523bf11f3007/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/therealshabi/.gradle/caches/transforms-2/files-2.1/217b57b52c65ae4a9e2b523bf11f3007/AndroidManifest.xml:20:5-44
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		ADDED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
+		INJECTED from /home/therealshabi/Desktop/development/Android/Brogrammer/app/src/main/AndroidManifest.xml
