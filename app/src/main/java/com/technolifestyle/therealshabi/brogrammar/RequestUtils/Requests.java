@@ -4,17 +4,16 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.technolifestyle.therealshabi.brogrammar.DataSynchronization.LocalDataSync;
 import com.technolifestyle.therealshabi.brogrammar.Models.MessageModel;
 import com.technolifestyle.therealshabi.brogrammar.Models.UserModel;
 import com.technolifestyle.therealshabi.brogrammar.SharedPreferenceUtils.SharedPreferenceStorage;
 import com.technolifestyle.therealshabi.brogrammar.StringUtility.Slack_Client;
 import com.technolifestyle.therealshabi.brogrammar.StringUtility.StringUtils;
-import com.technolifestyle.therealshabi.brogrammar.DataSynchronization.LocalDataSync;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,10 +30,11 @@ public class Requests implements Slack_Client {
     private String USERS_LIST_URL = "https://slack.com/api/users.list?token=";
     private String MESSAGE_HISTORY_URL = "https://slack.com/api/channels.history?token=";
 
-    public void getSlackCode(final Context context, String GET_ACCESS_TOKEN_URL) throws JSONException {
+    public void getSlackCode(final Context context, String GET_ACCESS_TOKEN_URL) {
         /*jsonObject.put("client_id", CLIENT_ID);
         jsonObject.put("client_secret", CLIENT_SECRET);*/
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, GET_ACCESS_TOKEN_URL, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                GET_ACCESS_TOKEN_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
@@ -73,7 +73,7 @@ public class Requests implements Slack_Client {
         USERS_LIST_URL += SharedPreferenceStorage.getAccessCode(context);
         Log.d("URL", USERS_LIST_URL);
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, USERS_LIST_URL, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(USERS_LIST_URL,null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
@@ -112,7 +112,8 @@ public class Requests implements Slack_Client {
     public void getChannelMessages(final Context context) {
         MESSAGE_HISTORY_URL += SharedPreferenceStorage.getAccessCode(context) + "&channel=" + GENERAL_CHANNEL_ID;
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, MESSAGE_HISTORY_URL, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+                MESSAGE_HISTORY_URL, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
@@ -134,7 +135,7 @@ public class Requests implements Slack_Client {
 
                         //Local Database Insertion
                         LocalDataSync data = new LocalDataSync(context);
-                        if (data.getMessage(message) != true)
+                        if (!data.getMessage(message))
                             data.insertMessageDetails(message);
                     }
                 } catch (JSONException e) {
